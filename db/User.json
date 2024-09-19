@@ -1,0 +1,13 @@
+[
+    {
+        "_id": "d80951f4-f727-4108-bab4-580c438d21a8",
+        "username": "Joses3",
+        "password": "$2b$10$1AXA7PgMsaQWgNgjohqPsOFHHqWbSC/UhNjP1hIS2/t2omfNugAP2"
+    },
+    {
+        "_id": "aaf79734-5272-4cdb-80f5-c28a97efdc1a",
+        "username": "Joses1",
+        "password": "$2b$10$eY8BhEb67znXNiOVt8vnHO9fmmfEAzZP2bA4n.h6Az8WHMUx3qqCu",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikpvc2VzMSIsInBhc3N3b3JkIjoiMTIzNDU2NzgiLCJpYXQiOjE3MjY2OTk3MjAsImV4cCI6MTcyNjcwMzMyMH0.kiXwLOXVLwpNMm_Cs4WW7o6FWgZXdenc8IkhGX4hgjY"
+    }
+]
