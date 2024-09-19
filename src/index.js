@@ -9,21 +9,25 @@ const app = express();
 app.set("view engine", "ejs");
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/", Usuarios);
 
-// app.post("/update", async (req, res) => {
-//   const { username, password } = req.body;
+app.get("/login", (req, res) => {
+  res.send(`<html>
+    <head>
+    <title>Login</title>
+    </head>
+    <body>
+    <form method="POST" action="/create">
+    Nombre Usuario: <input type="text" name="username" placeholder="username" /></br>
+    Contraseña: <input type="password" name="password" placeholder="password" /></br>
+    <button type="submit">Create</button>
+    </form>
+    </body>
+    </html>`);
+});
 
-//   console.log(req.body);
-
-//   try {
-//     const id = await UserRepository.update({ username, password });
-//     res.send({ id });
-//   } catch (error) {
-//     res.status(400).send({ error: error.message });
-//   }
-// });
 app.post("/logout", (req, res) => {});
 app.get("/protected", (req, res) => {});
 

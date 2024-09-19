@@ -22,6 +22,7 @@ class UserControllers {
   static async apiCreateUser(req, res, next) {
     try {
       const id = await UserService.createUser(req.body);
+      res.redirect("/login");
       res.json(id);
     } catch (error) {
       console.log(`Could not create user ${error}`);
